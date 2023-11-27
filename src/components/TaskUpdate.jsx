@@ -28,7 +28,7 @@ export const TodoUpdate = ({ todo, handleUpdateTodo }) => {
 			<input
 				type='text'
 				className={`input-update ${
-					todo.done ? 'text-decoration-dashed' : ''
+					todo.done && 'text-decoration-dashed'
 				}`}
 				name='updateDescription'
 				value={updateDescription}
